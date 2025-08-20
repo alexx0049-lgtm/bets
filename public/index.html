@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronosticuri Liga 1</title>
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+    <header>
+        <h1>Clasament Pronosticuri</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="matches">
+                <h2>Meciurile etapei 7</h2>
+                <form id="predictionsForm">
+                    <div class="match">
+                        <label for="userName">Numele tău</label>
+                        <input type="text" id="userName" name="userName" placeholder="Nume" required>
+                    </div>
+                    <div class="match">
+                        <label for="match1">UTA vs. Slobozia </label>
+                        <input type="text" id="match1" name="match1" placeholder="Ex: 2-1" required>
+                    </div>
+                    <div class="match">
+                        <label for="match2">Metaloglobus vs. Rapid</label>
+                        <input type="text" id="match2" name="match2" placeholder="Ex: 0-1" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">Botosani vs. M Ciuc</label>
+                        <input type="text" id="match3" name="match2" placeholder="Ex: 1-0" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">U Cluj vs. Dinamo</label>
+                        <input type="text" id="match4" name="match2" placeholder="Ex: 2-2" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">Galati vs. CFR</label>
+                        <input type="text" id="match5" name="match2" placeholder="Ex: 3-3" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">Craiova vs. Petrolul</label>
+                        <input type="text" id="match6" name="match2" placeholder="Ex: 3-1" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">FCSB vs. Arges</label>
+                        <input type="text" id="match7" name="match2" placeholder="Ex: 0-0" required>
+                    </div>
+					                    <div class="match">
+                        <label for="match2">Hermannstadt vs. Farul</label>
+                        <input type="text" id="match8" name="match2" placeholder="Ex: 0-0" required>
+                    </div>
+                    <button type="submit" id="submitBtn">Trimite Pronosticurile</button>
+                </form>
+            </section>
+
+            <section class="leaderboard">
+                <h2>Clasament Live</h2>
+                <ul id="leaderboardList">
+                    </ul>
+            </section>
+
+            <section class="predictions-list">
+                <h2>Pronosticurile participanților</h2>
+                <ul id="predictionsList">
+                    </ul>
+            </section>
+        </div>
+    </main>
+    <script src="script.js?v=1"></script>
+</body>
+</html>

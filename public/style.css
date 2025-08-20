@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.matches, .leaderboard, .predictions-list {
+    flex: 1;
+}
+
+.match {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submitBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submitBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.leaderboard, .predictions-list {
+    margin-top: 0;
+}
+
+#leaderboardList, #predictionsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboardList li, #predictionsList li {
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+#leaderboardList li span, #predictionsList li span {
+    font-weight: bold;
+}
+
+/* Stiluri pentru culori */
+.correct {
+    color: green; /* Culoarea verde pentru 3 puncte */
+    font-weight: bold;
+}
+
+.partial {
+    color: orange; /* Culoarea portocalie pentru 1 punct */
+    font-weight: bold;
+}
